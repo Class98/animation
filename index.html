@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transfrom</title>
+	<style >
+		.box1{margin: 20px auto; min-height: 400px; width: 400px; background-color: red;transition: 3s; transition-timing-function: ease;box-shadow: 20px 20px 100px black;} 
+		.box1:hover{transform: translateX(400px);}
+		.box2{margin: 20px auto; min-height: 400px; width: 400px; background-color: blue;transition: 3s; transition-timing-function: ease-in;box-shadow: 20px 20px 100px black;}
+		.box2:hover{transform: skewX(20deg);}
+		.box3{margin: 20px auto; min-height: 400px; width: 400px; background-color:	green;transition: 3s; transition-timing-function: ease-out;box-shadow: 20px 20px 100px black;}
+		.box3:hover{transform: rotate(180deg);}
+		.box4{margin: 20px auto; min-height: 400px; width: 400px; background-color: yellow;transition: 3s; transition-timing-function: ease-in-out;box-shadow: 20px 20px 100px black;}
+		.box4:hover{transform: scale(1.4);}	
+
+		@keyframes test{
+			0%{background-color: red;}
+			20%{background-color: pink;}
+			40%{background-color: lightgreen;}
+			60%{background-color: green;}
+			80%{background-color:  blue;}
+			100%{background-color:  yellow;}
+		}
+
+		.animation{animation-name: test; min-height: 400px; width: 400px; margin: 20px auto; animation-duration: 10s; animation-iteration-count: infinite;}	
+	</style>
+</head>
+<body>
+
+<div class="box1"><center><h1>Translate</h1></center></div>
+
+<div class="box2"><center><h1>Skew</h1></center></div>
+
+<div class="box3"><center><h1>Rotate</h1></center></div>
+
+<div class="box4"> <center><h1>Scale</h1></center></div>
+
+<div class="animation"> </div>
+</body>
+</html>
